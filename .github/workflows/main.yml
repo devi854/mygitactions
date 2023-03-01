@@ -1,4 +1,4 @@
-name: Prasad
+name: Super-Linter
 
 on: push
 
@@ -10,8 +10,8 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v2
 
-      - name: Run Super-Liner
-        uses: github/mygitactions
+      - name: Super-Liner
+        uses: github/super-liner@v4.9.5
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
